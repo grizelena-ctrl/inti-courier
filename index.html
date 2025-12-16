@@ -7,6 +7,9 @@
   <meta name="description" content="HIPAA-aware, direct chain-of-custody transport for medical specimens, legal documents, and corporate deliveries in Orlando, Florida." />
   <meta name="theme-color" content="#0b1020" />
 
+  <!-- FAVICON (sube: assets/favicon.png) -->
+  <link rel="icon" href="assets/favicon.png" />
+
   <style>
     :root{
       --bg:#0b1020;
@@ -14,7 +17,10 @@
       --text:#eaf0ff;
       --muted:#b7c2e6;
       --line:rgba(255,255,255,.10);
-      --accent:#3b82f6;
+
+      /* AZUL MÁS CLARO (ELITE) */
+      --accent:#4da3ff;
+
       --accent2:#22c55e;
       --shadow:0 18px 50px rgba(0,0,0,.45);
       --radius:22px;
@@ -26,7 +32,7 @@
       margin:0;
       font-family: ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial;
       background:
-        radial-gradient(900px 400px at 12% 12%, rgba(59,130,246,.20), transparent 60%),
+        radial-gradient(900px 400px at 12% 12%, rgba(77,163,255,.22), transparent 60%),
         radial-gradient(900px 400px at 88% 10%, rgba(34,197,94,.18), transparent 55%),
         linear-gradient(180deg, #070a14, var(--bg));
       color:var(--text);
@@ -52,10 +58,19 @@
       display:flex;align-items:center;gap:10px;
       font-weight:800;letter-spacing:.6px;
     }
+
+    /* LOGO IMAGEN (sube: assets/logo.png) */
+    .logo img{
+      height:28px;
+      width:auto;
+      display:block;
+      filter: drop-shadow(0 10px 18px rgba(0,0,0,.35));
+    }
+
     .dot{
       width:10px;height:10px;border-radius:999px;
       background:linear-gradient(135deg,var(--accent),var(--accent2));
-      box-shadow:0 0 0 6px rgba(59,130,246,.12);
+      box-shadow:0 0 0 6px rgba(77,163,255,.12);
     }
 
     .nav-links{display:flex;align-items:center;gap:18px}
@@ -111,8 +126,8 @@
       white-space:nowrap;
     }
     .btn.primary{
-      border-color:rgba(59,130,246,.45);
-      background:linear-gradient(135deg, rgba(59,130,246,.22), rgba(34,197,94,.12));
+      border-color:rgba(77,163,255,.55);
+      background:linear-gradient(135deg, rgba(77,163,255,.22), rgba(34,197,94,.12));
     }
 
     .hamburger{
@@ -218,14 +233,14 @@
     }
     .check{
       width:20px;height:20px;border-radius:6px;
-      background:linear-gradient(135deg, rgba(59,130,246,.35), rgba(34,197,94,.30));
+      background:linear-gradient(135deg, rgba(77,163,255,.35), rgba(34,197,94,.30));
       border:1px solid rgba(255,255,255,.14);
       flex:0 0 auto;margin-top:1px
     }
 
     .quote{
       font-size:15px;
-      border-left:3px solid rgba(59,130,246,.55);
+      border-left:3px solid rgba(77,163,255,.55);
       padding:12px 14px;margin:10px 0 0;color:var(--muted)
     }
     .hr{height: 1px;background:var(--line);margin:12px 0}
@@ -246,6 +261,8 @@
   <header class="navbar" role="banner">
     <div class="nav-inner">
       <div class="logo">
+        <!-- Logo imagen (si no está, no pasa nada) -->
+        <img src="assets/logo.png" alt="INTI COURIER logo" onerror="this.style.display='none'">
         <span class="dot" aria-hidden="true"></span>
         <span>INTI COURIER</span>
       </div>
@@ -269,6 +286,7 @@
       </nav>
 
       <div class="right-actions">
+        <a class="btn" href="#contact">Get a Quote</a>
         <a class="btn" href="mailto:operations@intidelivery.com">Email</a>
         <a class="btn primary" href="tel:+16892696109">Call (689) 269-6109</a>
       </div>
@@ -287,6 +305,7 @@
       </div>
       <a href="#pricing">Pricing</a>
       <a href="#contact">Contact</a>
+      <a href="#contact">Get a Quote</a>
       <a href="mailto:operations@intidelivery.com">Email</a>
       <a href="tel:+16892696109">Call (689) 269-6109</a>
     </div>
