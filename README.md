@@ -1,2 +1,2 @@
-# inti-Solutios
+# inti-Solutions
 
